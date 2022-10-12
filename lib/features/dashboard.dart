@@ -45,7 +45,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                 ProfileScreen()
               ]),
           bottomNavigationBar: SizedBox(
-            height: 80,
+            height: 40,
             child: TabBar(
               labelPadding:
                   const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
