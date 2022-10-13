@@ -86,7 +86,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     )
                                   : CachedNetworkImage(
                                       imageUrl: AssetStrings.userImage,
-                                      fit: BoxFit.fitWidth,
+                                      fit: BoxFit.cover,
                                       progressIndicatorBuilder:
                                           (context, str, progress) {
                                         return const CupertinoActivityIndicator();

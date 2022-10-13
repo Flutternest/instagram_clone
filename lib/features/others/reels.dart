@@ -114,7 +114,7 @@ class _ReelsScreenState extends State<ReelsScreen> {
                             imageUrl: userData.profilePhoto.isNotEmpty
                                 ? userData.profilePhoto
                                 : AssetStrings.userImage,
-                            fit: BoxFit.fitWidth,
+                            fit: BoxFit.cover,
                             progressIndicatorBuilder: (context, str, progress) {
                               return const CupertinoActivityIndicator();
                             },
@@ -343,14 +343,14 @@ class _ReelsScreenState extends State<ReelsScreen> {
           borderRadius: BorderRadius.circular(5),
           border: Border.all(color: Colors.white, width: 1.5),
           color: Colors.white),
-      child: ClipOval(
+      child: ClipRect(
         child: SizedBox.fromSize(
           size: const Size.fromRadius(12),
           child: CachedNetworkImage(
             imageUrl: userData.profilePhoto.isNotEmpty
                 ? userData.profilePhoto
                 : AssetStrings.userImage,
-            fit: BoxFit.fitWidth,
+            fit: BoxFit.cover,
             progressIndicatorBuilder: (context, str, progress) {
               return const CupertinoActivityIndicator();
             },
